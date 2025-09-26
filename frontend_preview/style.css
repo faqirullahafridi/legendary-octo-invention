@@ -1,0 +1,43 @@
+/* Custom styles for the passport photo maker preview */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.step-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    border-width: 2px;
+}
+
+.step-indicator.active {
+    background-color: rgb(37 99 235);
+    color: white;
+    border-color: rgb(37 99 235);
+}
+
+.step-indicator.completed {
+    background-color: rgb(34 197 94);
+    border-color: rgb(34 197 94);
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .step-label {
+        display: none;
+    }
+    
+    .step-indicator {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.75rem;
+    }
+}
